@@ -26,7 +26,7 @@ It provides the raw behavioral data needed for **AI Training Corpus Extraction**
 ### 📢 Beta Program
 DB Prisma is currently in an invite-only Beta phase (**Xirang Program**).
 
-👉 [**Click Here to Apply for Beta Access**]([这里放您的表单链接](https://wj.qq.com/s2/26594821/7e5b/))
+👉 [**Click Here to Apply for Beta Access**]([(https://wj.qq.com/s2/26594821/7e5b/)])
 
 *After submission, you will receive the binary download link and the Quick Start Guide via email.*
 
