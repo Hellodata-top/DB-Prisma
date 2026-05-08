@@ -1,0 +1,33 @@
+name: Auto-Reply Beta Code
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  reply-and-close:
+    # 只有当 Issue 带有 beta-application 标签时才触发
+    if: contains(github.event.issue.labels.*.name, 'beta-application')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Send Welcome Message
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "### 🎉 Application Received!\n\nHello! Thanks for your interest in **DB Prisma**.\n\nYour Beta access materials have been prepared. Please follow the instructions below:\n\n- **Download Link**: [Click here to download Binary v1.0.2]\n- **Public Beta Code**: `PRISMA-BETA-2026` \n- **Next Step**: Follow the `DOCS.md` for quick setup.\n\n*This issue will be closed automatically to keep the workspace clean.*"
+            })
+      - name: Close Issue
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.update({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'closed'
+            })
