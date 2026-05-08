@@ -1,36 +1,34 @@
 # DB Prisma 🚀
 
-**High-Performance SQL Interceptor & Traffic Capture Engine** *Built with C++ 17 & Windows IOCP for Near-Zero Latency*
+**基于 C++ 17 & Windows IOCP 的高性能数据库流量拦截与指令抓取引擎**
 
-[简体中文](README_CN.md) | [Apply for Beta](#-beta-program) | [Documentation](DOCS.md)
-
----
-
-### What is DB Prisma?
-DB Prisma is a **non-invasive** database gateway designed for high-concurrency environments. It operates as a surgical-grade interceptor between applications and databases, capturing full-scale SQL traffic with microsecond latency. 
-
-It provides the raw behavioral data needed for **AI Training Corpus Extraction**, **System Throttling**, and **Security Auditing** without affecting primary database performance.
-
-### Core Capabilities
-- **Ultra-Low Latency**: Leverages Windows IOCP for asynchronous I/O to ensure business-as-usual performance during traffic peaks.
-- **Full Traffic Capture**: Captures DML/DDL commands in real-time, filling the gaps left by traditional binlog-based monitoring.
-- **Decoupled Architecture**:
-  - **DB Prism**: Front-end high-speed interception.
-  - **DB Monitor**: Back-end persistence and behavioral backtracking.
-
-### Targeted Use Cases
-- **AI Corpus Extraction**: Real-time capture of "Request-Response" pairs to feed domain-specific LLMs.
-- **Database Migration**: Zero-downtime migration with dual-write support and automatic SQL dialect conversion.
-- **Security & Forensics**: Nanosecond-level reconstruction of data tampering events to locate the exact source of operations.
+[English](README_EN.md) | [公测申请](#-公测申请) | [技术文档](https://hellodata.top)
 
 ---
 
-### 📢 Beta Program
-DB Prisma is currently in an invite-only Beta phase (**Xirang Program**).
+### 什么是 DB Prisma？
+DB Prisma 是一款专为高并发业务设计的**非侵入式**数据库前置网关。它像一把手术刀，在应用层与数据库之间实现纳秒级的 SQL 指令拦截，并将全量流量实时抓取并持久化，为 AI 语料采集、系统限流保护、安全审计提供最原始的业务逻辑。
 
-👉 [**Click Here to Apply for Beta Access**](这里放您的表单链接)
+### 核心能力
+1. **极低延迟拦截**：基于 Windows IOCP 异步 I/O，在大促级洪峰下依然保持业务零感知。
+2. **全量流量抓取**：不依赖 Binlog，实时捕获并解析 DML/DDL 指令，填补监控空白。
+3. **架构解耦**：
+   - **DB Prism (前端)**：极速拦截与抓取。
+   - **DB Monitor (后端)**：持久化落盘与行为溯源。
 
-*After submission, you will receive the binary download link and the Quick Start Guide via email.*
+### 适用场景
+- **AI 语料萃取**：实时采集真实业务“请求-响应”对，喂养垂直领域大模型。
+- **信创迁移**：实现 Oracle 到国产数据库的流量双写与方言自动转换。
+- **安全审计**：纳秒级还原数据篡改现场，定位具体操作来源。
+
+---
+
+### 📢 公测申请
+DB Prisma 目前处于定向邀请内测阶段（息壤计划）。
+
+👉 [**立即点击申请公测激活码**](这里放您的表单链接)
+
+提交后，系统将自动发送【二进制包下载地址】与【快速上手手册】至您的邮箱。
 
 ---
 © 2026 Hellodata Top / Xirang Tech
