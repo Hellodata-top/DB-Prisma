@@ -1,6 +1,6 @@
 # DB Prisma 🚀
 
-**High-Performance SQL Interceptor & Traffic Capture Engine** *Built with C++ 17 & Windows IOCP for Near-Zero Latency*
+**High-Performance SQL Interceptor & Traffic Capture Engine** *Built with C++  & Windows IOCP for Near-Zero Latency*
 
 [简体中文](README_CN.md) | [Apply for Beta](#-beta-program) | [Documentation](DOCS.md)
 
@@ -14,9 +14,7 @@ It provides the raw behavioral data needed for **AI Training Corpus Extraction**
 ### Core Capabilities
 - **Ultra-Low Latency**: Leverages Windows IOCP for asynchronous I/O to ensure business-as-usual performance during traffic peaks.
 - **Full Traffic Capture**: Captures DML/DDL commands in real-time, filling the gaps left by traditional binlog-based monitoring.
-- **Decoupled Architecture**:
-  - **DB Prism**: Front-end high-speed interception.
-  - **DB Monitor**: Back-end persistence and behavioral backtracking.
+
 
 ### Targeted Use Cases
 - **AI Corpus Extraction**: Real-time capture of "Request-Response" pairs to feed domain-specific LLMs.
